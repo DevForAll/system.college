@@ -60,6 +60,13 @@ def get_tests():
 
 @app.route('/user', methods=['POST'])
 def create_user():
+	print("MODIFICACION DE LA RAMA copia_development")
+	print("MODIFICACION DE LA RAMA copia_development")
+	print("MODIFICACION DE LA RAMA copia_development")
+	print("MODIFICACION DE LA RAMA copia_development")
+	print("MODIFICACION DE LA RAMA copia_development")
+	print("MODIFICACION DE LA RAMA copia_development")
+
 	name = request.json['name']
 	last_name = request.json['last_name']
 	active = request.json['active']
@@ -72,6 +79,11 @@ def create_user():
 
 @app.route('/users', methods=['GET'])
 def get_users():
+	print("MODIFICACION DE LA RAMA copia_development")
+	print("MODIFICACION DE LA RAMA copia_development")
+	print("MODIFICACION DE LA RAMA copia_development")
+	print("MODIFICACION DE LA RAMA copia_development")
+	
 	all_tasks = Task.query.all()
 	result = tasks_schema.jsonify(all_tasks)
 	return result
@@ -88,6 +100,7 @@ def update_user(id):
 	name = request.json['name']
 	last_name = request.json['last_name']
 	active = request.json['active']
+	print("MODIFICACION DE LA RAMA copia_development")
 
 	user.name = name
 	user.last_name = last_name
@@ -101,7 +114,7 @@ def delete_user(id):
 	user = Task.query.get(id)
 	db.session.delete(user)
 	db.session.commit()
-
+	print("MODIFICACION DE LA RAMA copia_development")
 	return task_schema.jsonify(user)
 
 @app.route('/', methods=['GET'])
