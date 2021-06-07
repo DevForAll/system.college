@@ -1,0 +1,15 @@
+1. Instalar entorno virtual
+pip install --user virtualenv
+python -m virtualenv venv
+
+2. Activar entorno virtual
+.\venv\Scripts\activate
+
+3. Instalar las librerias o modulos
+pip install Flask
+pip install Flask-RESTful
+
+4. Luego de instalar estas librerias podemos crear nuestra app
+pero todavia no estamos realizando la conexion a la base de datos.
+
+5. Se agrego Endpoints y clase usuario para la ejecucion del y prueba con postman
