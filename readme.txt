@@ -1,5 +1,0 @@
-primer commit
-
-
-CAMBIOS DE LA NUEVA RAMA
-SE REQUIERE FUSIONAR CON LA MASTER (ESTA ES LA RAMA new_branch_development)
