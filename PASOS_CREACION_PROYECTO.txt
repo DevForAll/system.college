@@ -13,3 +13,17 @@ pip install Flask-RESTful
 pero todavia no estamos realizando la conexion a la base de datos.
 
 5. Se agrego Endpoints y clase usuario para la ejecucion del y prueba con postman
+
+6. Instalar librerias para la base de datos y librerias de serializar, deserealizar objetos
+pip install Flask-SQLAlchemy, flask-marshmallow, marshmallow, marshmallow-sqlalchemy
+pip install python-dotenv   ---   pip install psycopg2
+7. Se configuro el app.py para que pueda obtener la url del POSTGRESQL
+y se creo el archivo .env para que guarde las variables de entorno.
+8. Se creo el archivo db.py para obtener la base de datos
+9. Se definio la clase userModel y mapeo de sus campos de la tabla
+10. Se crear el archivo ma.py para el uso de marshmallow y deserealizar, serializar objetos
+del usuario
+11. Se configuro el app.py para que pueda obtener la configuracion de 
+marshmallow
+12. Se configura userSchema para deserializar la instancia del modelo UserModels
+13. Se configura el Resource Users para que traiga la lista de usuarios
