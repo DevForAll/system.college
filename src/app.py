@@ -3,16 +3,19 @@ from flask import Flask
 from flask_restful import Api
 from resources.userResource import User
 from db import db
+from os.path import join, dirname
 from dotenv import load_dotenv
 from ma import ma
 
 
 #   CREACION DE APP 
 app = Flask(__name__)
-# load_dotenv(".env")
+#   BUSQUEDA DEL ARCHIVO "ENV" PARA OBTENER LAS CONFIGURACIONES
+dotenv_path = join(dirname(__file__), '.env')
+load_dotenv(dotenv_path)
+
 app.config['DEBUG'] = True
-# app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URI')
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:admin@localhost/school"
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 api = Api(app)
