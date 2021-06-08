@@ -2,9 +2,7 @@ INSERT INTO public.tpp_usuario(
 	vc_nombre, vc_apellido_parterno, vc_apellido_materno, vc_codigo, vc_usuario, vc_password,
 	in_tipo_documento, dt_nacimiento, vc_pais, vc_departamento, vc_provincia, vc_distrito, vc_direccion, 
 	dt_registry, vc_celular, vc_correo)
-	VALUES ('Pedro', 'Castillo', 'Ladron', '2021000003', 'pedro castillo', '2021000003',
-			1, '1975-05-06', 'Peru', 'Puno', 'Puno', 'Chanchallo', 'Cerro', 
-			'2021-06-05 22:57:00.54', '+51 995485742', 'pedro.castillo@gmail.com');
+	VALUES ('Abril', 'Peralta', 'Valenzuela', '2021000003', 'abril peralta', '2021000003',1, '2004-04-03', 'Peru', 'Lima', 'Lima', 'Miraflores', 'Pituca city', '2021-06-07 23:30:00.00', '+51 921465854', 'abril.peralta@gmail.com');
 
 SELECT*FROM TPP_USUARIO;
 
